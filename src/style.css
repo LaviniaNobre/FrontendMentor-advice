@@ -1,0 +1,98 @@
+.container-card {
+  background: var(--background-color);
+  color: var(--text-color);
+
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 28px
+}
+
+.card {
+  background: var(--advice-card-color);
+
+  height: 333px;
+  width: 540px;
+  padding: 20px;
+  border-radius:15px;
+
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
+.advice-title {
+  color: var(--advice-dice-color);
+
+  font-size: 13px;
+  letter-spacing: 4.1px;
+  text-transform: uppercase;
+  margin-top: 28px;
+  margin-bottom: 25px;
+  margin-left: 3px;
+}
+
+.text-audio {
+  margin-inline: 20px;
+}
+
+.divise {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.button {
+  position: absolute;
+  bottom: -31px;
+
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--advice-dice-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 30px var(--advice-dice-color);
+}
+
+@media (max-width:375px) {
+
+  .card {
+    width: 345px;
+    height: 315px;
+    margin-inline: 15px;
+  }
+
+  .advice-title {
+    margin-top: 37px;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+
+  .text-audio {
+    margin-inline: 5px;  
+    font-size: 24px;
+  }
+
+  .divise {
+    margin-top: 9px;
+  }
+
+  .button {
+    bottom: -33px;
+  }
+}
+
